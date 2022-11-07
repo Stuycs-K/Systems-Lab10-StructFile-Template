@@ -1,3 +1,7 @@
+# Data
+*.csv
+*.dat
+
 # Prerequisites
 *.d
 
