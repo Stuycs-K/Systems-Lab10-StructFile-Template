@@ -22,11 +22,11 @@ Read the contents of the nyc_pop.csv file (this is text).
 
 Store each piece of data using the following struct (exactly) :
 
-        struct pop_entry {
-          int year;
-          int population;
-          char boro[15];
-        };
+    struct pop_entry {
+      int year;
+      int population;
+      char boro[15];
+    };
 
 Create & write a new file nyc_pop.dat containing the population data using struct pop_entry . This file should contain byte data.
 
@@ -83,14 +83,11 @@ This is only the fist 11 entries, there should be 115 at the start.
 
 ## Sample output: -add_data
 
-2020 Bronx 1390450 Was entered manually at the time of the program running.
-
-            
     $ ./structrw -add_data
     Enter year boro pop: 2020 Bronx 1390450
     Appended data to file: year: 2020	boro: Bronx	pop: 1390450
 
-          
+"2020 Bronx 1390450" Was entered manually at the time of the program running. If you then -read_data that new entry will appear.
 
 ## Sample output:  -update_data
 
