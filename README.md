@@ -16,9 +16,11 @@ The header of the file is this:
 
 Your goal: write a program that will perform the following actions based on a command line argument:
 
--read_csv
-        Read the contents of the nyc_pop.csv file (this is text).
-        Store each piece of data using the following struct (exactly) :
+## -read_csv
+
+Read the contents of the nyc_pop.csv file (this is text).
+
+Store each piece of data using the following struct (exactly) :
 
         struct pop_entry {
           int year;
@@ -26,24 +28,33 @@ Your goal: write a program that will perform the following actions based on a co
           char boro[15];
         };
 
-        Create & write a new file nyc_pop.dat containing the population data using struct pop_entry . This file should contain byte data.
-        If the file already exists, overwrite the existing one.
-    -read_data
-        Read the contents of the data file into an array of struct pop_entry values. This array should be dynamically allocated based on the file size.
-        Display the data in human-readable format, provide a number for each data entry when displaying.
-    -add_data
-        Ask the user for new data to put into a struct pop_entry value.
-        Update the entry in the data file (not the csv).
-    -update_data
-        Start like -read_data .
-        Then prompt the user to enter the corresponding number of an entry to modify.
-        Then prompt the user for new data.
-        Update the entry in the data file (not the csv).
+Create & write a new file nyc_pop.dat containing the population data using struct pop_entry . This file should contain byte data.
 
-Sample output:
+If the file already exists, overwrite the existing one.
 
-    -read_csv
+## -read_data
 
+Read the contents of the data file into an array of struct pop_entry values. This array should be dynamically allocated based on the file size.
+
+Display the data in human-readable format, provide a number for each data entry when displaying.
+
+## -add_data
+
+Ask the user for new data to put into a struct pop_entry value.
+
+Update the entry in the data file (not the csv).
+
+## -update_data
+
+Start like -read_data 
+
+Then prompt the user to enter the corresponding number of an entry to modify.
+
+Then prompt the user for new data.
+
+Update the entry in the data file (not the csv).
+
+## Sample output: -read_csv
             
     $ ./structrw -read_csv
     reading nyc_pop.csv
@@ -51,10 +62,9 @@ Sample output:
 
           
 
-    -read_data
+## Sample output: -read_data
 
-    This is only the fist 11 entries, there should be 115 at the start.
-
+This is only the fist 11 entries, there should be 115 at the start.
             
     $ ./structrw -read_data
     0: year: 1790	boro: Manhattan	pop: 33131
@@ -71,9 +81,9 @@ Sample output:
 
           
 
-    -add_data
+## Sample output: -add_data
 
-    2020 Bronx 1390450 Was entered manually at the time of the program running.
+2020 Bronx 1390450 Was entered manually at the time of the program running.
 
             
     $ ./structrw -add_data
@@ -82,11 +92,11 @@ Sample output:
 
           
 
-    -update_data
+## Sample output:  -update_data
 
-    Only showing the last few lines of output, but all the data should be displayed.
+Only showing the last few lines of output, but all the data should be displayed.
 
-    108 and 9999 Stuy 4000 where entered manually.
+108 and 9999 Stuy 4000 where entered manually.
 
             
     $ ./structrw -update_data
