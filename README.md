@@ -42,15 +42,19 @@ Display the data in human-readable format, provide a number for each data entry 
 
 Ask the user for new data to put into a struct pop_entry value.
 
+The data is entered into stdin in the format:  Year Population Borough
+
 Update the entry in the data file (not the csv).
 
 ## -update_data
 
 Start like -read_data 
 
-Then prompt the user to enter the corresponding number of an entry to modify.
+Then prompt the user to enter the corresponding index of an entry to modify.
 
 Then prompt the user for new data.
+
+The data is entered into stdin in the format:  Year Population Borough
 
 Update the entry in the data file (not the csv).
 
