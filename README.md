@@ -8,13 +8,15 @@ Your compile should output the binary to "structrw" for ease of scripting on my 
 
 You will find a csv file of NYC census population values here: nyc_pop.csv Place this in the same directory as your code/makefile but don't add it to your repo.
 
-    The header of the file is this: Year,Manhattan,Brooklyn,Queens,Bronx,Staten Island
+The header of the file is this: 
+    
+    Year,Manhattan,Brooklyn,Queens,Bronx,Staten Island
     An example line of data is this: 1790,33131,4549,6159,1781,3827
     You should support comma separated headers of boroughs with spaces in them. (e.g.) Staten island does not have to be the last entry.
 
 Your goal: write a program that will perform the following actions based on a command line argument:
 
-    -read_csv
+-read_csv
         Read the contents of the nyc_pop.csv file (this is text).
         Store each piece of data using the following struct (exactly) :
 
