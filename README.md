@@ -92,8 +92,8 @@ This is only the fist 11 entries, there should be 115 at the start.
 ## Sample output: -add_data
 
     $ ./structrw -add_data
-    Enter year population borough: 2020 1390450 Bronx
-    Appended data to file: year: 2020	boro: Bronx	pop: 1390450
+    Enter year population borough: 2020 1390450 The Bronx
+    Appended data to file: year: 2020	boro: The Bronx	pop: 1390450
 
 "2020 1390450 Bronx" Was entered into stdin at the time of the program running. If you then -read_data that new entry will appear.
 
@@ -106,14 +106,14 @@ Only showing the last few lines of output, but all the data should be displayed.
             
     $ ./structrw -update_data
     107: year: 2000	boro: Queens	pop: 2229379
-    108: year: 2000	boro: Bronx	pop: 1332650
+    108: year: 2000	boro: The Bronx	pop: 1332650
     109: year: 2000	boro: Staten Island	pop: 443728
     110: year: 2010	boro: Manhattan	pop: 1585873
-    111: year: 2010	boro: Brooklyn	pop: 2504700
+    111: year: 2010	boro: Brooklyn nine-nine	pop: 2504700
     112: year: 2010	boro: Queens	pop: 2230722
-    113: year: 2010	boro: Bronx	pop: 1385108
+    113: year: 2010	boro: The Bronx	pop: 1385108
     114: year: 2010	boro: Staten Island	pop: 468730
-    115: year: 2020	boro: Bronx	pop: 1390450
+    115: year: 2020	boro: The Bronx	pop: 1390450
     entry to update: 108
     Enter year population borough: 9999 4000 Stuy
     File updated.
