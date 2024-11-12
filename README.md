@@ -32,18 +32,13 @@ Store each piece of data using the following struct (exactly) :
       char boro[15];
     };
 
-Create & write a new file nyc_pop.dat containing the population data using struct pop_entry . This file should contain byte data.
-
-If the file already exists, overwrite the existing one.
+Create a new file & write Or over-write any existing file named `nyc_pop.dat`. It should contain all of the data in your array of `struct pop_entry` . This file should contain the data directly, not text.
 
 ## -read_data
 
-Read the contents of the data file into an array of struct pop_entry values. This array should be dynamically allocated based on the file size.
+Read the contents of `nyc_pop.dat` into an array of struct pop_entry values. This array should be dynamically allocated based on the file size.
 
 Display the data in human-readable format, provide a number for each data entry when displaying.
-
-Create a new file & write Or over-write any existing file named `nyc_pop.dat`. It should contain all of the data in your array of `struct pop_entry` . This file should contain the data directly, not text.
-        
 
 ## -add_data
 
