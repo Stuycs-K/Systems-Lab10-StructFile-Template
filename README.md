@@ -44,6 +44,10 @@ Ask the user for new data to put into a struct pop_entry value.
 
 The data is entered into stdin in the format:  Year Population Borough
 
+`1999 24025 The Bronx`
+
+NOTE: The borough is last, so that you can have spaces in the name such as Staten Island or The Bronx. 
+
 Update the entry in the data file (not the csv).
 
 ## -update_data
@@ -65,21 +69,21 @@ Update the entry in the data file (not the csv).
     wrote 2760 bytes to nyc_pop.data
 
           
-
+Year,Manhattan,Brooklyn nine-nine,Queens,The Bronx,Staten Island
 ## Sample output: -read_data
 
 This is only the fist 11 entries, there should be 115 at the start.
             
     $ ./structrw -read_data
     0: year: 1790	boro: Manhattan	pop: 33131
-    1: year: 1790	boro: Brooklyn	pop: 4549
+    1: year: 1790	boro: Brooklyn nine-nine	pop: 4549
     2: year: 1790	boro: Queens	pop: 6159
-    3: year: 1790	boro: Bronx	pop: 1781
+    3: year: 1790	boro: The Bronx	pop: 1781
     4: year: 1790	boro: Staten Island	pop: 3827
     5: year: 1800	boro: Manhattan	pop: 60515
-    6: year: 1800	boro: Brooklyn	pop: 5740
+    6: year: 1800	boro: Brooklyn nine-nine	pop: 5740
     7: year: 1800	boro: Queens	pop: 6642
-    8: year: 1800	boro: Bronx	pop: 1755
+    8: year: 1800	boro: The Bronx	pop: 1755
     9: year: 1800	boro: Staten Island	pop: 4563
     10: year: 1810	boro: Manhattan	pop: 96373
 
