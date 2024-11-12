@@ -7,7 +7,7 @@ You should have a makefile with compile and run target.
 
 `make compile` : should create a binary called `structrw` for ease of scripting on my end. That is compile *must* use `-o structrw`
 
-You will find a csv file of NYC census population values here: nyc_pop.csv Place this in the same directory as your code/makefile but don't add it to your repo.
+You will find a csv file of NYC census population values in the class notes called `nyc_pop.csv`. Place this in the same directory as your code/makefile but don't add it to your repo! I will provide my own with the same name.
 
 The header of the file is this: 
     
