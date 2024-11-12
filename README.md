@@ -4,7 +4,6 @@
 
 You should have a makefile with compile and run target.
 
-
 `make compile` : should create a binary called `structrw` for ease of scripting on my end. That is compile *must* use `-o structrw`
 
 You will find a csv file of NYC census population values in the class notes called `nyc_pop.csv`. Place this in the same directory as your code/makefile but don't add it to your repo! I will provide my own with the same name.
@@ -42,6 +41,9 @@ If the file already exists, overwrite the existing one.
 Read the contents of the data file into an array of struct pop_entry values. This array should be dynamically allocated based on the file size.
 
 Display the data in human-readable format, provide a number for each data entry when displaying.
+
+Create & write a new file `nyc_pop.dat` containing the population data using `struct pop_entry` . This file should contain the data directly, not text.
+        
 
 ## -add_data
 
