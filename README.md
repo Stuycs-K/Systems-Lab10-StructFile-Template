@@ -42,7 +42,7 @@ Read the contents of the data file into an array of struct pop_entry values. Thi
 
 Display the data in human-readable format, provide a number for each data entry when displaying.
 
-Create & write a new file `nyc_pop.dat` containing the population data using `struct pop_entry` . This file should contain the data directly, not text.
+Create a new file & write Or over-write any existing file named `nyc_pop.dat`. It should contain all of the data in your array of `struct pop_entry` . This file should contain the data directly, not text.
         
 
 ## -add_data
