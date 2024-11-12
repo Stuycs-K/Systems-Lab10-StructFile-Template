@@ -10,7 +10,7 @@ You will find a csv file of NYC census population values here: nyc_pop.csv Place
 
 The header of the file is this: 
     
-    Year,Manhattan,Brooklyn nine-nin,Queens,The Bronx,Staten Island
+    Year,Manhattan,Brooklyn nine-nine,Queens,The Bronx,Staten Island
 
 An example line of data is this: 
 
