@@ -11,8 +11,12 @@ You will find a csv file of NYC census population values here: nyc_pop.csv Place
 The header of the file is this: 
     
     Year,Manhattan,Brooklyn nine-nin,Queens,The Bronx,Staten Island
-    An example line of data is this: 1790,33131,4549,6159,1781,3827
-    You should support comma separated headers of boroughs with spaces in them. (e.g.) Staten island does not have to be the last entry.
+
+An example line of data is this: 
+
+    1790,33131,4549,6159,1781,3827
+    
+You should support comma separated headers of boroughs with spaces in them. (e.g.) Staten island does not have to be the last entry. I modified the names to include some spaces like The Bronx.
 
 Your goal: write a program that will perform the following actions based on a command line argument:
 
